@@ -23,8 +23,19 @@ This command will migrate all our database in to SQLite3 file.
     python3 manage.py migrate
 ```
 
-⌨️  Built-In Components
-
+⌨️  Built-In Components :
+ * In the Chrome or Any browser to navigate into django admin panel check this url and it will show django administration,
+```
+   http://127.0.0.1:8000/admin/login/?next=/admin/
+```
+ * Create your user Id in Django Administration, run this command:
+```
+  python manage.py createsuperuser
+  OR,
+  python3 manage.py createsuperuser
+```
+ * Next Log In with your user ID and Password and the Dashboard will show you in this url http://127.0.0.1:8000/admin/
+ 
 ⌨️  My First App Component
 
 ⌨️  Create Product Objects in the Python Shell
