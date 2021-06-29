@@ -1,21 +1,21 @@
 # Django Forms
 
 
-⌨️  Create a Blank Django Project
+⌨️  Creating a Blank Django Project :
 ```
     sudo django-admin startproject django_forms
 ```
-To Run the Application in Server:
+To Run the Application in Server :
 ```
     python manage.py runserver
     python3 manage.py runserver
 ```
  * Starting development server at http://127.0.0.1:8000/
 
-⌨️  Setup VS Code Text Editor
+⌨️  Setup in VS Code Text Editor :
  * You can install Python or Django Extension in your vs code.
 
-⌨️  Settings
+⌨️  Project Settings :
 This command will migrate all our database in to SQLite3 file.
 ```
     python manage.py migrate
