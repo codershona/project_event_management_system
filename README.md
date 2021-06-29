@@ -13,8 +13,15 @@ To Run the Application in Server:
  * Starting development server at http://127.0.0.1:8000/
 
 ⌨️  Setup VS Code Text Editor
+ * You can install Python or Django Extension in your vs code.
 
 ⌨️  Settings
+This command will migrate all our database in to SQLite3 file.
+```
+    python manage.py migrate
+    OR,
+    python3 manage.py migrate
+```
 
 ⌨️  Built-In Components
 
