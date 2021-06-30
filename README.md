@@ -44,7 +44,13 @@ This command will migrate all our database in to SQLite3 file.
  python3 manage.py startapp socialize
 ```
 
-⌨️  Getting Started with Templates : Static Files & First Steps with the Django Template Language
+###  Getting Started with Templates :
+⌨️  Static Files & First Steps with the Django Template Language
+
+ * To check the new template which we created we can see in the browser,
+```
+  http://127.0.0.1:8000/socialize/
+```
 
 ⌨️  Key Django Template Language Features & Tags
 
