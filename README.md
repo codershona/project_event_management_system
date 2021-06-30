@@ -38,7 +38,7 @@ This command will migrate all our database in to SQLite3 file.
 ```
  * Next Log In with your user ID and Password and the Dashboard will show you in this url,
  ```
-   http://127.0.0.1:8000/admin/
+    http://127.0.0.1:8000/admin/
 ```
 ⌨️  Working with Apps : URLs & Views
 
