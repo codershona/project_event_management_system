@@ -38,81 +38,45 @@ This command will migrate all our database in to SQLite3 file.
  
 ⌨️  My First App Component
 
-⌨️  Create Product Objects in the Python Shell
+⌨️  Working with Apps : URLs & Views
 
-⌨️  New Model Fields
+⌨️  Getting Started with Templates : Static Files & First Steps with the Django Template Language
 
-⌨️  Change a Model
+⌨️  Key Django Template Language Features & Tags
 
-⌨️  Default Homepage to Custom Homepage
+⌨️  Adding a Detail Page
 
-⌨️  URL Routing and Requests
+⌨️  Dynamic Paths : Dynamic URLs in Templates
 
-⌨️  Django Templates
+⌨️  Using Django Template Inheritance
 
-⌨️  Django Templating Engine Basics
+⌨️  Data Definition
 
-⌨️  Include Template Tag
+⌨️  Using Models
 
-⌨️  Rendering Context in a Template
+⌨️  Using the Admin Panel & Querying Data
 
-⌨️  For Loop in a Template
+⌨️  Adding Image Upload & Serving & Displaying Images
 
-⌨️  Using Conditions in a Template
+⌨️  Configuring the Admin Area
 
-⌨️  Template Tags and Filters
+⌨️  Setting one-to-many Relations
+
+⌨️  Many-to-many Relations
+
+⌨️  More Meetup Fields & Outputting Related Data
 
 ⌨️  Render Data from the Database with a Model
 
-⌨️  How Django Templates Load with Apps
+⌨️  Creating a Modelform
 
-⌨️  Django Model Forms
+⌨️  Handling Form Submission
 
-⌨️  Raw HTML Form
+⌨️  More on Form Submission & Validation
 
-⌨️  Pure Django Form
+⌨️  From Modelform to Form
 
-⌨️  Form Widgets
+⌨️  Optimizing URLs
 
-⌨️  Form Validation Methods
 
-⌨️  Initial Values for Forms
-
-⌨️  Dynamic URL Routing
-
-⌨️  Handle DoesNotExist
-
-⌨️  Delete and Confirm
-
-⌨️  View of a List of Database Objects
-
-⌨️  Dynamic Linking of URLs
-
-⌨️  Django URLs Reverse
-
-⌨️  In App URLs and Namespacing
-
-⌨️  Class Based Views - ListView
-
-⌨️  Class Based Views - DetailView
-
-⌨️  Class Based Views - CreateView and UpdateView
-
-⌨️  Class Based Views - DeleteView
-
-⌨️  Function Based View to Class Based View
-
-⌨️  Raw Detail Class Based View
-
-⌨️  Raw List Class Based View
-
-⌨️  Raw Create Class Based View
-
-⌨️  Form Validation on a Post Method
-
-⌨️  Raw Update Class Based View
-
-⌨️  Raw Delete Class Based View
-
-⌨️  Custom Mixin for Class Based Views
 
