@@ -4,6 +4,18 @@ from django.shortcuts import render
 # Create your views here.
 
 def index(request):
-    return render(request, 'socialize/index.html')
+    socialize = [
+        {
+            'title': 'This is our First Hangouts'
+        },
+        {
+            'title': 'This is our Second Hangouts'
+        }
+    ]
+    return render(request, 'socialize/index.html', {
+        #'show_socialize': False,
+        'show_socialize': True,
+        'socialize': socialize
+    })
 #   return HttpResponse('Hello django!')
 

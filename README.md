@@ -59,8 +59,6 @@ This command will migrate all our database in to SQLite3 file.
 
 ⌨️  Key Django Template Language Features & Tags
 
-  *
-
 ⌨️  Adding a Detail Page
 
 ⌨️  Dynamic Paths : Dynamic URLs in Templates
