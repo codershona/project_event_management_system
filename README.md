@@ -55,9 +55,11 @@ This command will migrate all our database in to SQLite3 file.
 ```
   http://127.0.0.1:8000/socialize/
 ```
- * To create Static site we need to add its base UI.
+ * To create Static site we need to add its bases styles UI.
 
 ⌨️  Key Django Template Language Features & Tags
+
+  *
 
 ⌨️  Adding a Detail Page
 
