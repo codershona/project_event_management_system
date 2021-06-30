@@ -12,7 +12,7 @@ To Run the Application in Server :
 ```
  * Starting development server at,
  ```
-   http://127.0.0.1:8000/
+    http://127.0.0.1:8000/
 ```
 ⌨️  Setup in VS Code Text Editor :
  * You can install Python or Django Extension in your vs code.
