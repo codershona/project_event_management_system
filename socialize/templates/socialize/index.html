@@ -7,18 +7,41 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>SOCILIZE HANGOUTS</title>
  <link rel="stylesheet" href="{% static 'socialize/styles/bases.css' %}">
+ <link rel="stylesheet" href="{% static 'socialize/styles/all-socilize.css' %}">
 </head>
 
 <body>
-   <h1>ALL SOCILIZE!!</h1>
-   <p>Hello all in SOCILIZE!!!!</p>
-    {% if show_socialize %}
-     {% comment %} <h2>{{ socialize.0.title }}</h2> {% endcomment %}
-      {% for socialize_item in socialize %}
-       <p>{{ socialize_item.title }}</p>
+   <header id="main-header">
+     <nav><a href="/socialize" id="main-logo">Hangouts</a></nav>
+     <h1>We are arranging a great hangout party coming soon!</h1>
+     <p>Check which will be better for you!!</p>
+   </header>
+
+   <main>
+     <section>
+     <h2>Upcoming Hangouts!</h2>
+     <ol>
+     {% for socialize_item in socialize %}
+       <li class="socialize-item">
+        <article>
+         <div class="socialize-summary">
+          <div class="socialize-image">
+           <img src="" alt="">
+         </div>
+         <div class="socialize-details">
+           <h3>{{ socialize_item.title }}</h3>
+           <address>{{ socialize_item.location }}</address>
+           <h4>{{ socialize_item.group_name }}</h4>
+          </div>
+         </div>
+         <div class="socialize-actions">
+           <a href="" class="btn"> Enquiry More Details</a>
+         </div>
+        </article>
+       </li>
       {% endfor %}
-     {% else %}
-     <p>No Hangouts group found!</p>
-     {% endif %}
+     </ol>
+     </section>
+   </main>
 </body>
 </html>
