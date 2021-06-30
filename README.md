@@ -10,8 +10,10 @@ To Run the Application in Server :
     python manage.py runserver
     python3 manage.py runserver
 ```
- * Starting development server at http://127.0.0.1:8000/
-
+ * Starting development server at,
+ ```
+  http://127.0.0.1:8000/
+```
 ⌨️  Setup in VS Code Text Editor :
  * You can install Python or Django Extension in your vs code.
 
@@ -34,8 +36,10 @@ This command will migrate all our database in to SQLite3 file.
   OR,
   python3 manage.py createsuperuser
 ```
- * Next Log In with your user ID and Password and the Dashboard will show you in this url http://127.0.0.1:8000/admin/
-
+ * Next Log In with your user ID and Password and the Dashboard will show you in this url,
+ ```
+  http://127.0.0.1:8000/admin/
+```
 ⌨️  Working with Apps : URLs & Views
 
  * While working on app we can need multiple django templates so we can use this command
