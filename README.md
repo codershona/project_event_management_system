@@ -35,10 +35,14 @@ This command will migrate all our database in to SQLite3 file.
   python3 manage.py createsuperuser
 ```
  * Next Log In with your user ID and Password and the Dashboard will show you in this url http://127.0.0.1:8000/admin/
- 
-⌨️  My First App Component
 
 ⌨️  Working with Apps : URLs & Views
+
+ * While working on app we can need multiple django templates so we can use this command
+
+```
+ python3 manage.py startapp socialize
+```
 
 ⌨️  Getting Started with Templates : Static Files & First Steps with the Django Template Language
 
