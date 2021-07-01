@@ -5,9 +5,9 @@
  <meta charset="UTF-8">
  <meta http-eqiv="X-UA-Compatible" content="IE=edge"/>
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <title>SOCILIZE HANGOUTS</title>
+ <title>SOCIALIZE HANGOUTS</title>
  <link rel="stylesheet" href="{% static 'socialize/styles/bases.css' %}">
- <link rel="stylesheet" href="{% static 'socialize/styles/all-socialize.css' %}">
+ <link rel="stylesheet" href="{% static 'socialize/styles/all_socialize.css' %}">
 </head>
 
 <body>
@@ -16,7 +16,6 @@
      <h1>We are arranging a great hangout party coming soon!</h1>
      <p>Check which will be better for you!!</p>
    </header>
-
    <main>
      <section>
      <h2>Upcoming Hangouts!</h2>
@@ -35,7 +34,7 @@
           </div>
          </div>
          <div class="socialize-actions">
-           <a href="{% url 'socializes-details' socialize_item.slug %}" class="btn"> Enquiry More Details</a>
+           <a href="{% url 'socializes-details' socialize_item.slug %}" id="btn"> Enquiry More Details</a>
          </div>
         </article>
        </li>
