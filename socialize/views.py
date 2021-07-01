@@ -25,3 +25,13 @@ def index(request):
     })
 #   return HttpResponse('Hello django!')
 
+def socializes_details(request, socializes_slug):
+    print(socializes_slug)
+    selected_socialize = {
+        'title': 'Here First Party',
+        'description': 'This is another first Socialize party!!'
+        }
+    return render(request, 'socialize/socializes-details.html', {
+        'socialize_title': selected_socialize['title'],
+        'socialize_description': selected_socialize['description']
+    })

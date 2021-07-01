@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-eqiv="X-UA-Compatible" content="IE=edge"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>{{ socialize_title }}</title>
+ <link rel="stylesheet" href="{% static 'socialize/styles/bases.css' %}">
+ <link rel="stylesheet" href="{% static 'socialize/styles/socializes-details.css' %}">
+</head>
+
+<body>
+<main>
+  <article>
+  <img src="" alt="">
+
+  <section id="location">
+   <h2>Socialize Location</h2>
+   <address>This the place where the party will held in <span>LOCATION</span> (ADDRESS). </address>
+  </section>
+
+  <section id="details">
+  <h2>The Socialize Part is for</h2>
+  <p>{{ socialize_description }}</p>
+  <footer>
+  <p>Do want to see more information? Please <a href="#">Contact the party orgraniser</a> (but don't spam us ;-)).</p>
+  </footer>
+  </section>
+
+   <section id="registration">
+     <h2>Register here to Join the Party!</h2>
+     FORM
+   </section>
+  </article>
+</main>
+</body>
+</html>

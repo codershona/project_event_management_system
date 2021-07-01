@@ -11,7 +11,7 @@ section {
   
   .socialize-item {
     margin: 1rem 0;
-    background-color: #350490;
+    background-color: #82b958;
     padding: 2rem;
     color: white;
     border-radius: 4px;
@@ -52,11 +52,11 @@ section {
   .socialize-actions .btn {
     background-color: #cb82fb;
     border-color: #cb82fb;
-    color: #350490;
+    color: #049045;
     padding: 0.75rem 2rem;
   }
-  
+
   .socialize-actions .btn:hover {
-    background-color: #ba82fb;
-    border-color: #ba82fb;
+    background-color: #e9fb82;
+    border-color: #fbc782f8;
   }
