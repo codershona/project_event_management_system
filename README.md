@@ -74,6 +74,20 @@ This command will migrate all our database in to SQLite3 file.
 
 ⌨️  Using Models
 
+ * To work in model go to models.py file to create your app model.Make sure we added our project name in our forms setting.py file in installed app section.
+ * To Create a database run this command,
+ ```
+    python manage.py makemigrations
+    or,
+    python3 manage.py makemigrations
+```
+
+ * If we want to execute the database of django we can run this command to migrate our database,
+ ```
+    python manage.py migrate
+    or,
+    python3 manage.py migrate
+ ```
 ⌨️  Using the Admin Panel & Querying Data
 
 ⌨️  Adding Image Upload & Serving & Displaying Images
