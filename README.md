@@ -106,6 +106,15 @@ This command will migrate all our database in to SQLite3 file.
 
 ⌨️  Adding Image Upload & Serving & Displaying Images
 
+ * To adding images to upload it in the UI we can install this package which is called Pillow,
+```
+   python3 -m pip install Pillow
+```
+To check your uploaded image in browser you can go into this link, for example,
+```
+   http://127.0.0.1:8000/files/images/download.jpeg
+```
+You can now see the preview of your image
 ⌨️  Configuring the Admin Area
 
 ⌨️  Setting one-to-many Relations

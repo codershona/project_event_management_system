@@ -6,3 +6,4 @@ class Socialize(models.Model):
     title = models.CharField(max_length=2000)
     slug = models.SlugField(unique=True)
     description = models.TextField()
+    image = models.ImageField(upload_to='images')
