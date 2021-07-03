@@ -22,7 +22,7 @@ We are arranging a great hangout party coming soon!
      <h2>Upcoming Hangouts!</h2>
      <ol>
      {% for socialize_item in socialize %}
-       {% include 'socialize/includes/socializes-item.html' with title=socialize_item.title location=socialize_item.location %}
+       {% include 'socialize/includes/socializes-item.html' with title=socialize_item.title location='United Kingdom' slug=socialize_item.slug %}
       {% endfor %}
      </ol>
      </section>

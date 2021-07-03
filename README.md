@@ -1,6 +1,19 @@
 # Django Forms
 
 
+### Technologies used :
+#### Frontend:
+
+ * Using my own Custom UI : Here I had pick a JS/CSS for the front end and use Django Page Templates. But for the APIs I used dynamic front-end as its require base.
+
+#### Backend:
+
+ * Python Django and Django Rest Framework
+ * Python version: Python 3.8.10
+ * Django version: 3.1.4
+ * Uses SQLite as the database
+
+
 ⌨️  Creating a Blank Django Project :
 ```
     sudo django-admin startproject django_forms
@@ -64,6 +77,7 @@ This command will migrate all our database in to SQLite3 file.
 ⌨️  Dynamic Paths : Dynamic URLs in Templates
 
 ⌨️  Using Django Template Inheritance
+ * By creating custom templates of the app structure and applying the UI of the app front end
 
 ⌨️  Data Definition :
 

@@ -13,6 +13,8 @@
 {% endblock %}
 
 {% block body %}
+
+{% if socialize_found %}
 <article>
   <img src="" alt="">
 
@@ -34,6 +36,15 @@
      FORM
    </section>
   </article>
+
+{% else %}
+<article>
+ <section class="errormessage">
+   <p>OOPs!!!, No Socialize Hangouts Event Found for this slug, Sorry!!</p>
+ </section>
+ </article>
+{% endif %}
+
 {% endblock %}
 </body>
 </html>

@@ -44,7 +44,7 @@ article {
     max-width: 80%;
     margin: auto;
   }
-  
+
   #details footer {
     color: #647172;
   }
@@ -54,7 +54,7 @@ article {
     text-decoration: none;
     font-weight: bold;
   }
-  
+
   #registration ul {
     list-style: none;
     margin: 0;
@@ -86,3 +86,13 @@ article {
     margin-bottom: 0.5rem;
     color: #88085d;
   }
+
+  .errormessage {
+    color: rgba(0, 0, 0, 0);
+    font-size: 5rem;
+    padding: 1rem;
+    border-radius: 4px;
+    max-width: 80%;
+    margin: auto;
+  }
+
