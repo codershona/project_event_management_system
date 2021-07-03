@@ -22,23 +22,7 @@ We are arranging a great hangout party coming soon!
      <h2>Upcoming Hangouts!</h2>
      <ol>
      {% for socialize_item in socialize %}
-       <li class="socialize-item">
-        <article>
-         <div class="socialize-summary">
-          <div class="socialize-image">
-           <img src="" alt="">
-         </div>
-         <div class="socialize-details">
-           <h3>{{ socialize_item.title }}</h3>
-           <address>{{ socialize_item.location }}</address>
-           <h4>{{ socialize_item.group_name }}</h4>
-          </div>
-         </div>
-         <div class="socialize-actions">
-           <a href="{% url 'socializes-details' socialize_item.slug %}" id="btn"> Enquiry More Details</a>
-         </div>
-        </article>
-       </li>
+       {% include 'socialize/includes/socializes-item.html' %}
       {% endfor %}
      </ol>
      </section>
