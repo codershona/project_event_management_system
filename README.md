@@ -65,7 +65,12 @@ This command will migrate all our database in to SQLite3 file.
 
 ⌨️  Using Django Template Inheritance
 
-⌨️  Data Definition
+⌨️  Data Definition 
+
+ * Data has 3 main categories that will be temporary data, semi-persistent data and persistent data.
+ * Temporary Data has User Input, Selected Blog Posts. This data is also used immediately and lost thereafter. It also stored in memory including Variables.
+ * Semi-Persistent Data is used for user authentication status. This data is also stored for a longer time but may be lost so that it can be re-created.
+ * Persistent Data is used for blog posts, orders and so on. It is used for the data to stored forever and must not be lost. It can be also stored in a Database.
 
 ⌨️  Using Models
 
