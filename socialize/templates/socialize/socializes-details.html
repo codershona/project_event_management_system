@@ -33,7 +33,8 @@
 
    <section id="registration">
      <h2>Register here to Join the Party!</h2>
-     <form>
+      <form action="{% url 'socializes-details' socialize.slug %}" method="POST">
+      {% csrf_token %}
      <ul>
      {{ form.as_ul }}
        </ul>

@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 from .models import Socialize
 from .forms import RegistrationForm
@@ -18,20 +18,41 @@ def index(request):
 def socializes_details(request, socializes_slug):
     # print(socializes_slug)
     try:
-     selected_socialize = Socialize.objects.get(slug=socializes_slug)
-     registration_form = RegistrationForm()
-     return render(request, 'socialize/socializes-details.html', {
-        'socialize_found': True,
-        'socialize': selected_socialize,
-        'form': registration_form
+      selected_socialize = Socialize.objects.get(slug=socializes_slug)
+      if request.method == 'GET':
+        # selected_socialize = Socialize.objects.get(slug=socializes_slug)
+        registration_form = RegistrationForm()
+        # return render(request, 'socialize/socializes-details.html', {
+        # 'socialize_found': True,
+        # 'socialize': selected_socialize,
+        # 'form': registration_form
         #  'form': registration_form
         # 'socialize_title': selected_socialize['title'],
         # Using dot notation in this method
         # 'socialize_title': selected_socialize.title,
         # 'socialize_description': selected_socialize['description']
         # 'socialize_description': selected_socialize.description
-    })
+    #    })
+      else:
+        registration_form = RegistrationForm(request.POST)
+        if registration_form.is_valid():
+           contributor = registration_form.save()
+           selected_socialize.contributor.add(contributor)
+           return redirect('registration_complete')
+
+
+      return render(request, 'socialize/socializes-details.html', {
+            'socialize_found': True,
+            'socialize': selected_socialize,
+            'form': registration_form
+        })
+
     except Exception as exc:
+        print(exc)
         return render(request, 'socialize/socializes-details.html', {
             'socialize_found': False
-        }) 
+        })
+
+def registration_complete(request):
+    # socialize = Socialize.objects.get(slug=socializes_slug)
+    return render(request, 'socialize/registration-complete.html')
