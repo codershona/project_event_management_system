@@ -28,7 +28,6 @@ DEBUG = True
 ALLOWED_HOSTS = ['https://socialize-app-backenddjango.herokuapp.com']
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
