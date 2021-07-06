@@ -41,7 +41,7 @@ def socializes_details(request, socializes_slug):
            user_phone = registration_form.cleaned_data['phone_number']
            contributor,_ = Contributor.objects.get_or_create(email_address=user_email, phone_number=user_phone)
            selected_socialize.contributor.add(contributor)
-           return redirect('registration_complete')
+           return redirect('registration_complete', socializes_slug=socializes_slug)
 
 
       return render(request, 'socialize/socializes-details.html', {
@@ -56,6 +56,8 @@ def socializes_details(request, socializes_slug):
             'socialize_found': False
         })
 
-def registration_complete(request):
-    # socialize = Socialize.objects.get(slug=socializes_slug)
-    return render(request, 'socialize/registration-complete.html')
+def registration_complete(request, socializes_slug):
+  socialize = Socialize.objects.get(slug=socializes_slug)
+  return render(request, 'socialize/registration-complete.html', {
+        'supervisor_email': socialize.supervisor_email
+    })
