@@ -68,7 +68,6 @@ ssh-import-id==5.10
 systemd-python==234
 testresources==2.0.1
 urllib3==1.25.8
-usb-creator==0.3.7
 wadllib==1.3.3
 xkit==0.0.0
 yamllint==1.25.0
