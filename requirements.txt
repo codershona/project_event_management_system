@@ -8,7 +8,6 @@ chardet==3.0.4
 Click==7.0
 colorama==0.4.3
 dbus-python==1.2.16
-defer==1.0.6
 diskcache==5.1.0
 distro==1.4.0
 distro-info===0.23ubuntu1
