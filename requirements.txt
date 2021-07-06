@@ -7,7 +7,6 @@ cffi==1.14.4
 chardet==3.0.4
 Click==7.0
 colorama==0.4.3
-dbus-python==1.2.16
 diskcache==5.1.0
 distro==1.4.0
 Django==3.1.4
@@ -43,7 +42,6 @@ Pillow==7.0.0
 protobuf==3.6.1
 pycairo==1.16.2
 pycparser==2.20
-pycups==1.9.73
 Pygments==2.3.1
 PyJWT==1.7.1
 pymacaroons==0.13.0
