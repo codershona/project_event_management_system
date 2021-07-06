@@ -3,7 +3,6 @@ asgiref==3.3.1
 attrs==20.3.0
 bcrypt==3.1.7
 blinker==1.4
-Brlapi==0.7.0
 certifi==2019.11.28
 cffi==1.14.4
 chardet==3.0.4
