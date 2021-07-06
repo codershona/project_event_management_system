@@ -1,7 +1,7 @@
 # Socialize Event Organizing Planner Application
 
 #### Project Can be found in here :
- **[Live version](https://github.com/codershona/django_forms.git)**
+ **[Live version](https://socialize-app-backenddjango.herokuapp.com)**
 
 <p align="center">
 	
