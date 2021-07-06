@@ -1,4 +1,4 @@
-# Django Forms
+# Socialize Event Organizing Planner Application
 
 #### Project Can be found in here :
  **[Live version]()**
@@ -7,8 +7,15 @@
 	
 <img src="https://user-images.githubusercontent.com/57604500/124647128-d762c580-de95-11eb-9cca-b03e33bb9e86.png" width=956>
 <br />
-<h3 align="center">CHAT APP</h3>
+<h3 align="center">Socialize Application</h3>
 </p>
+
+### Project Description:
+
+Socialize is an open source event management system built with Python3 and Django web framework.This is actually Event Organizing Planner Application. This is a general purpose django-app for syncing events planning to a local database and adding socialize event plans into the content to a website.
+
+This was specifically designed to put events for one Socialize/Hangouts groups onto their independent website. However, it was designed to give flexibility to the developer for whatever SOCIALIZE APPLICATION content syncing and posting they wish.
+
 
 ### Technologies used :
 #### Frontend:
