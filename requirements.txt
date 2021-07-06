@@ -1,5 +1,4 @@
 appdirs==1.4.4
-apturl==0.5.2
 asgiref==3.3.1
 attrs==20.3.0
 bcrypt==3.1.7
