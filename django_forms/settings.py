@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'zg#(mpz1w&mp73fs^gd3cjr-e71w&o6rhv=gn39*(+3expzh-='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['https://socialize-app-backenddjango.herokuapp.com',
 'localhost',
