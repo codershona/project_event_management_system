@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# ALLOWED_HOSTS = ['https://socialize-app-django.herokuapp.com']
+
 
 # Application definition
 
