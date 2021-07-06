@@ -1,10 +1,10 @@
 # Socialize Event Organizing Planner Application
 
 #### Project Can be found in here :
- **[Live version](#)**
+ **[Live version](https://socialize-app-backenddjango.herokuapp.com)**
 
 <p align="center">
-	
+
 <img src="https://user-images.githubusercontent.com/57604500/124647128-d762c580-de95-11eb-9cca-b03e33bb9e86.png" width=956>
 <br />
 <h3 align="center">Socialize Application</h3>
