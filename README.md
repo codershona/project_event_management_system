@@ -1,7 +1,7 @@
 # Socialize Event Organizing Planner Application
 
 #### Project Can be found in here :
- **[Live version]()**
+ **[Live version](#)**
 
 <p align="center">
 	
