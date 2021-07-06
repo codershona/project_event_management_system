@@ -1,0 +1,31 @@
+{% extends 'socialize/bases/bases.html' %}
+
+
+{% load static %}
+
+{% block title %}SOCIALIZE HANGOUTS{% endblock %}
+
+{% block sites_css %}
+<link rel="stylesheet" href="{% static 'socialize/styles/all_socialize.css' %}">
+{% endblock %}
+
+{% block main_headings %}
+We are arranging a great hangout party coming soon!
+{% endblock %}
+
+{% block header_contents %}
+<p>Check which will be better for you!!</p>
+{% endblock %}
+
+{% block body %}
+<section>
+     <h2>Upcoming Hangouts!</h2>
+     <ol>
+     {% for socialize_item in socialize %}
+       {% include 'socialize/includes/socializes-item.html' with title=socialize_item.title image=socialize_item.image.url location='United Kingdom' group_name=socialize_item.group_name slug=socialize_item.slug %}
+      {% endfor %}
+     </ol>
+     </section>
+{% endblock %}
+</body>
+</html>

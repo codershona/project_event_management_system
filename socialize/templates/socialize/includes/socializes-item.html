@@ -1,0 +1,17 @@
+<li class="socialize-item">
+        <article>
+         <div class="socialize-summary">
+          <div class="socialize-image">
+           <img src="{{ image }}" alt="{{ title }}">
+         </div>
+         <div class="socialize-details">
+           <h3>{{ title }}</h3>
+           <address>{{ location }}</address>
+           <h4>{{ group_name }}</h4>
+          </div>
+         </div>
+         <div class="socialize-actions">
+           <a href="{% url 'socializes-details' slug %}" id="btn"> Enquiry More Details</a>
+         </div>
+        </article>
+       </li>

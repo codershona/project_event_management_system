@@ -1,0 +1,28 @@
+{% extends 'socialize/bases/bases.html' %}
+
+{% load static %}
+
+{% block title %}Your register is complete!!{% endblock %}
+
+{% block sites_css %}
+<link rel="stylesheet" href="{% static 'socialize/styles/registration_success.css' %}">
+{% endblock %}
+
+{% block main_heading %}
+Thanks for register!
+{% endblock %}
+
+{% block body %}
+<article>
+<section id="confirmationOne">
+  <h2>Your register is complete!!</h2>
+  <p>Thanks for register - see you at the socialize hangouts party!</p>
+  <p>Got questions or can't make it? Please <a href="mailto:{{ supervisor_email }}">contact the organizer</a> ahead of time!</p>
+</section>
+
+<section id="continueOne">
+  <p>Of course you can sign up for more than one meetup!</p>
+  <p><a href="/socialize" class="btn">Explore our Events</a></p>
+</section>
+</article>
+{% endblock %}

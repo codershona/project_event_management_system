@@ -1,0 +1,58 @@
+{% extends 'socialize/bases/bases.html' %}
+
+{% load static %}
+
+{% block title %}{{ socialize.title }}{% endblock %}
+
+{% block sites_css %}
+<link rel="stylesheet" href="{% static 'socialize/styles/socializes-details.css' %}">
+{% endblock %}
+
+{% block main_headings %}
+{{ socialize.title }}
+{% endblock %}
+
+{% block body %}
+
+{% if socialize_found %}
+<article>
+  <img id="main-image" src={{ socialize.image.url }} alt="{{ socialize.title }}">
+
+  <section id="location">
+   <h2>Socialize Location</h2>
+   <address>This meetup takes place in <span>{{ socialize.location.name }}</span> ({{ socialize.location.address }}).</address>
+  </section>
+
+  <section id="details">
+  <h2>The Socialize Party is for to get together</h2>
+  <p>{{ socialize.description }}</p>
+  <footer>
+  <p>Do want to see more information? Please <a href="mailto:{{ socialize.supervisor_email }}">Contact the party orgraniser</a> (but don't spam us ;-)).</p>
+  </footer>
+  </section>
+
+   <section id="registration">
+     <h2>Register here to Join the Party!</h2>
+      <form action="{% url 'socializes-details' socialize.slug %}" method="POST">
+      {% csrf_token %}
+     <ul>
+     {{ form.as_ul }}
+       </ul>
+       <div id="registration-actions">
+        <button>Register</button>
+      </div>
+     </form>
+   </section>
+  </article>
+
+{% else %}
+<article>
+ <section class="errormessage">
+   <p>OOPs!!!, No Socialize Hangouts Event Found for this slug, Sorry!!</p>
+ </section>
+ </article>
+{% endif %}
+
+{% endblock %}
+</body>
+</html>
