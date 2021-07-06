@@ -125,7 +125,7 @@ You can now see the preview of your image
 
  * Many-to-Many example, a book can published in many countries or a country can publish many books.
 
-⌨️  More Meetup Fields & Outputting Related Data
+⌨️  More Socialize Fields & Outputting Related Data
 
 ⌨️  Render Data from the Database with a Model
 
