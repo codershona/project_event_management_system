@@ -30,7 +30,9 @@ SECRET_KEY = 'zg#(mpz1w&mp73fs^gd3cjr-e71w&o6rhv=gn39*(+3expzh-='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://socialize-app-backenddjango.herokuapp.com']
+ALLOWED_HOSTS = ['https://socialize-app-backenddjango.herokuapp.com',
+'localhost',
+'127.0.0.1']
 
 # Application definition
 INSTALLED_APPS = [
