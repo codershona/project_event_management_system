@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 
-from .models import Socialize
+from .models import Socialize, Contributor
 from .forms import RegistrationForm
 # from django.http import HttpResponse
 
@@ -36,7 +36,10 @@ def socializes_details(request, socializes_slug):
       else:
         registration_form = RegistrationForm(request.POST)
         if registration_form.is_valid():
-           contributor = registration_form.save()
+         # contributor = registration_form.save()
+           user_email = registration_form.cleaned_data['email_address']
+           user_phone = registration_form.cleaned_data['phone_number']
+           contributor,_ = Contributor.objects.get_or_create(email_address=user_email, phone_number=user_phone)
            selected_socialize.contributor.add(contributor)
            return redirect('registration_complete')
 
