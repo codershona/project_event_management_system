@@ -20,11 +20,13 @@ def socializes_details(request, socializes_slug):
      selected_socialize = Socialize.objects.get(slug=socializes_slug)
      return render(request, 'socialize/socializes-details.html', {
         'socialize_found': True,
+        'socialize': selected_socialize,
+        #  'form': registration_form
         # 'socialize_title': selected_socialize['title'],
         # Using dot notation in this method
-        'socialize_title': selected_socialize.title,
+        # 'socialize_title': selected_socialize.title,
         # 'socialize_description': selected_socialize['description']
-        'socialize_description': selected_socialize.description
+        # 'socialize_description': selected_socialize.description
     })
     except Exception as exc:
         return render(request, 'socialize/socializes-details.html', {

@@ -119,7 +119,11 @@ You can now see the preview of your image
 
 ⌨️  Setting one-to-many Relations
 
+ * There are different kinds of relationships. One-to-Many such as, one book as one author, one author write multiple books. One-to-One such as, one author has one address, one address belongs to author.
+
 ⌨️  Many-to-many Relations
+
+ * Many-to-Many example, a book can published in many countries or a country can publish many books.
 
 ⌨️  More Meetup Fields & Outputting Related Data
 

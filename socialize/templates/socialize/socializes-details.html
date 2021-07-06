@@ -2,30 +2,30 @@
 
 {% load static %}
 
-{% block title %}{{ socialize_title }}{% endblock %}
+{% block title %}{{ socialize.title }}{% endblock %}
 
 {% block sites_css %}
 <link rel="stylesheet" href="{% static 'socialize/styles/socializes-details.css' %}">
 {% endblock %}
 
 {% block main_headings %}
-{{ socialize_title }}
+{{ socialize.title }}
 {% endblock %}
 
 {% block body %}
 
 {% if socialize_found %}
 <article>
-  <img src="" alt="">
+  <img id="main-image" src={{ socialize.image.url }} alt="{{ socialize.title }}">
 
   <section id="location">
    <h2>Socialize Location</h2>
-   <address>This the place where the party will held in <span>LOCATION</span> (ADDRESS). </address>
+   <address>This meetup takes place in <span>{{ socialize.location.name }}</span> ({{ socialize.location.address }}).</address>
   </section>
 
   <section id="details">
-  <h2>The Socialize Part is for</h2>
-  <p>{{ socialize_description }}</p>
+  <h2>The Socialize Party is for to get together</h2>
+  <p>{{ socialize.description }}</p>
   <footer>
   <p>Do want to see more information? Please <a href="#">Contact the party orgraniser</a> (but don't spam us ;-)).</p>
   </footer>
