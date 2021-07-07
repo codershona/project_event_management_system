@@ -30,7 +30,7 @@ SECRET_KEY = 'zg#(mpz1w&mp73fs^gd3cjr-e71w&o6rhv=gn39*(+3expzh-='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://socialize-app-backenddjango.herokuapp.com',
+ALLOWED_HOSTS = ['socialize-app-backenddjango.herokuapp.com',
 'localhost',
 '127.0.0.1']
 
@@ -128,7 +128,7 @@ USE_TZ = True
 # STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Extra lookup directories for collectstatic to find static files
 # STATICFILES_DIRS = (
