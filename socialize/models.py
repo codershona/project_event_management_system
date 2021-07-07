@@ -32,7 +32,7 @@ class Socialize(models.Model):
     image = models.ImageField(upload_to='images')
     location = models.ForeignKey(Location, on_delete=models.CASCADE)
     group_name = models.CharField(max_length=290)
-    contributor = models.ManyToManyField(Contributor, blank=True, null=True)
+    contributor = models.ManyToManyField(Contributor, blank=True)
 
     def __str__(self):
         return f'{self.title} - {self.slug}'
